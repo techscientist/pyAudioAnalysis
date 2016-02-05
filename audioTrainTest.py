@@ -1,22 +1,18 @@
-import sys
-import numpy
-import time
-import os
-import glob
-import mlpy
 import cPickle
-import shutil
-import audioop
-import signal
 import csv
+import glob
 import ntpath
-import audioFeatureExtraction as aF
-import audioBasicIO
-from matplotlib.mlab import find
-import matplotlib.pyplot as plt
-import scipy.io as sIO
+import os
+import signal
+import sys
+
+import mlpy
+import numpy
 from scipy import linalg as la
 from scipy.spatial import distance
+
+import audioBasicIO
+import audioFeatureExtraction as aF
 
 
 def signal_handler(signal, frame):

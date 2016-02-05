@@ -1,22 +1,21 @@
-import numpy
-import mlpy
-import time
-import scipy
-import os
-import audioFeatureExtraction as aF
-import audioTrainTest as aT
-import audioBasicIO
-import matplotlib.pyplot as plt
-from scipy.spatial import distance
-import matplotlib.pyplot as plt
-import matplotlib.cm as cm
-from sklearn.lda import LDA
+import cPickle
 import csv
+import glob
+import os
 import os.path
+
+import matplotlib.pyplot as plt
+import mlpy
+import numpy
+import scipy
 import sklearn
 import sklearn.hmm
-import cPickle
-import glob
+from scipy.spatial import distance
+from sklearn.lda import LDA
+
+import audioBasicIO
+import audioFeatureExtraction as aF
+import audioTrainTest as aT
 
 """ General utility functions """
 

@@ -1,10 +1,19 @@
-import os, sys, shutil, glob, numpy, csv, cPickle
-import scipy.io.wavfile as wavfile
-import audioBasicIO
-import audioTrainTest as aT
-import audioSegmentation as aS
+import cPickle
+import csv
+import glob
+import os
+import shutil
+import sys
+
 import matplotlib.pyplot as plt
+import numpy
+import scipy.io.wavfile as wavfile
 import scipy.spatial.distance
+
+import audioBasicIO
+import audioSegmentation as aS
+import audioTrainTest as aT
+
 minDuration = 7;
 
 def classifyFolderWrapper(inputFolder, modelType, modelName, outputMode=False):
